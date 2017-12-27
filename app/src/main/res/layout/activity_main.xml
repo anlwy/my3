@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="今日课表"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:text="12-21  第16周 -星期天 "/>
+    </LinearLayout>
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="今天没课哦---"
+        android:textSize="22sp"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#a79595"
+        android:layout_height="3dp"/>
+    <TextView
+        android:id="@+id/tz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFE91515"
+        android:textSize="22sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:background="#a79595"
+
+        android:layout_height="3dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyview"
+        android:background="#FFFFFF"
+        android:paddingLeft="8dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ac"/>
+        </LinearLayout>
+
+
+
+            <include layout="@layout/buttentab" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
